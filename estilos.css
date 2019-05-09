@@ -1,3 +1,5 @@
-doby{
-    background-image: url("fondo.jpg")
+body{
+    width: 100%; height: max-content;
+    background-image: url(fondo.jpg) ;
+    background-size: 90% 90%;
 }
