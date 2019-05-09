@@ -7,11 +7,61 @@
     <title>CALCULADORA</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href='estilos.css'>
+    <script type="text/javascript" src="proceso.js"></script>
 
 </head>
 
 <body>
-    <p>lsdfhasdfh nasdfjnksadkjf nbjkasdfj</p>
+    <div>
+
+        <table class="modelo">
+            <tr>
+                <form>
+                    <input type="number" id="pantalla" value="0" >
+                </form>
+            </tr>
+            <tr>
+                <td><input type="button" id="borrar" value="&#8592;" onclick="borrar()"></td>
+                <td><input type="button" id="ce" value="CE" onclick="borrar()"></td>
+                <td><input type="button" id="c" value="C" onclick="borrar()"></td>
+                <td><input type="button" id="masmenos" value="&#177;" onclick="borrar()"></td>
+                <td><input type="button" id="raiz" value="&#8730;" onclick="raiz()"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" id="siete" value="7" onclick="numero(this.value)"></td>
+                <td><input type="button" id="ocho" value="8" onclick="numero(this.value)"></td>
+                <td><input type="button" id="nueve" value="9" onclick="numero(this.value)"></td>
+
+                <td><input type="button" id="division" value="/" onclick="numero('/')"></td>
+                <td><input type="button" id="porcentaje" value="%" onclick="numero('%')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="cuatro" value="4" onclick="numero(this.value)"></td>
+                <td><input type="button" id="cinco" value="5" onclick="numero(this.value)"></td>
+                <td><input type="button" id="seis" value="6" onclick="numero(this.value)"></td>
+
+                <td><input type="button" id="multiplicacion" value="*" onclick="numero('*')"></td>
+                <td><input type="button" id="unox" value="1/x" onclick="numero(1)"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" id="uno" value="1" onclick="numero(this.value)"></td>
+                <td><input type="button" id="dos" value="2" onclick="numero(this.value)"></td>
+                <td><input type="button" id="tres" value="3" onclick="numero(this.value)"></td>
+
+                <td><input type="button" id="menos" value="-" onclick="numero('-')"></td>
+                <td rowspan="2"><input type="button" id="igual" value="=" class="boton_igual" onclick="igual('=')"></td>
+
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" id="cero" value="0" class="boton_cero" onclick="numero(this.value)"></td>
+                <td><input type="button" id="coma" value="," onclick="botones(',')"></td>
+                <td rowspan="5"><input type="button" id="mas" value="+" onclick="numero('+')"></td>
+
+            </tr>
+        </table>
+    </div>
 
 </body>
 

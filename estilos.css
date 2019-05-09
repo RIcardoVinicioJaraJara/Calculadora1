@@ -1,5 +1,42 @@
 body{
     width: 100%; height: max-content;
     background-image: url(fondo.jpg) ;
-    background-size: 90% 90%;
+    background-size: 100% auto;
 }
+
+div{
+    width: 374px; height: 51%;
+    border: 10px double black;
+    margin: 0 auto;
+}
+
+#igual{
+    height: 145px;
+}
+
+#pantalla{
+    width: 98%;
+    height: 70px;
+    font-size: 25px;
+    margin: 2;
+    background: linear-gradient(to left,rgb(51, 245, 3), rgb(248, 7, 7) )
+}
+
+td, input{
+    
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    margin: 2;
+    background: linear-gradient(to left,rgb(108, 219, 247), rgb(98, 42, 187) )
+}
+    
+.boton_cero {
+   width: 100%;
+   height: 50;
+   cursor: pointer;
+   
+}
+
+
+
