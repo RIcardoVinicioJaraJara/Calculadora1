@@ -19,7 +19,9 @@ div{
     height: 70px;
     font-size: 25px;
     margin: 2;
-    background: linear-gradient(to left,rgb(51, 245, 3), rgb(248, 7, 7) )
+    background: linear-gradient(to left,rgb(51, 245, 3), rgb(248, 7, 7) );
+    text-align: center;
+    
 }
 
 td, input{
