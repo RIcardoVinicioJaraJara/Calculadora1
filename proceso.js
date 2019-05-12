@@ -1,5 +1,6 @@
 var numAux = 0;
 var operacion = "";
+var porce = 0;
 function numero(num) {
     if (document.getElementById("pantalla").value != '0') {
         document.getElementById("pantalla").value = (document.getElementById("pantalla").value + num);
@@ -58,6 +59,30 @@ function multi() {
     operacion = '*'
 }
 
+function porcetaje() {
+    var numAux1 = document.getElementById("pantalla").value
+    porce = ((numAux * numAux1) / 100);
+    switch (operacion) {
+        case "/":
+            numAux = parseFloat(numAux) / parseFloat(porce)
+            break;
+        case "+":
+            numAux = parseFloat(numAux) + parseFloat(porce)
+            break;
+        case "-":
+            numAux = parseFloat(numAux) - parseFloat(porce)
+            break;
+        case "*":
+            numAux = parseFloat(numAux) * parseFloat(porce)
+            break;
+    }
+    operacion = '%'
+}
+
+function unosobre() {
+    numAux = document.getElementById("pantalla").value
+    document.getElementById("pantalla").value = (1/(numAux))
+}
 function igual() {
     var num = document.getElementById("pantalla").value
     switch (operacion) {
@@ -73,6 +98,9 @@ function igual() {
         case "*":
             numAux = parseFloat(numAux) * parseFloat(num)
             break;
+        case "%":
+            numAux
+            break;
     }
-
+    document.getElementById("pantalla").value = (numAux)
 }
