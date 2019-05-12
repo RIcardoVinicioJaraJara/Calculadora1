@@ -59,6 +59,8 @@ function multi() {
     operacion = '*'
 }
 
+
+
 function porcetaje() {
     var numAux1 = document.getElementById("pantalla").value
     porce = ((numAux * numAux1) / 100);
@@ -75,13 +77,14 @@ function porcetaje() {
         case "*":
             numAux = parseFloat(numAux) * parseFloat(porce)
             break;
+
     }
     operacion = '%'
 }
 
 function unosobre() {
     numAux = document.getElementById("pantalla").value
-    document.getElementById("pantalla").value = (1/(numAux))
+    document.getElementById("pantalla").value = (1 / (numAux))
 }
 function igual() {
     var num = document.getElementById("pantalla").value
@@ -103,4 +106,47 @@ function igual() {
             break;
     }
     document.getElementById("pantalla").value = (numAux)
+}
+
+
+function soloNumeros1(e) {
+    var key = window.Event ? e.which : e.keyCode
+    if (((key >= 48 && key <= 57))) {
+        if (document.getElementById("pantalla").value != '0') {
+            document.getElementById("pantalla").value = (document.getElementById("pantalla").value + e.key);
+        } else {
+            document.getElementById("pantalla").value = (e.key);
+
+        }
+    } else {
+        switch (e.key) {
+            case "/":
+                divicion()
+                break;
+            case "+":
+                suma()
+                break;
+            case "-":
+                resta()
+                break;
+            case "*":
+                multi()
+                break;
+            case "=":
+                igual()
+                break;
+            case "%":
+                unosobre()
+                break;
+            case ".":
+                numero('.')
+                break;
+            default:
+                if (e.keyCode == 13) {
+                    igual()
+                }
+                break;
+        }
+        return false;
+    }
 }

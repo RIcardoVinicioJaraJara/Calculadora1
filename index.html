@@ -11,13 +11,13 @@
 
 </head>
 
-<body>
+<body onKeyPress="return soloNumeros1(event)">
     <div>
 
         <table class="modelo">
             <tr>
                 <form>
-                    <input type="text" id="pantalla" value="0">
+                    <input type="text" id="pantalla" value="0" >
                 </form>
             </tr>
             <tr>
@@ -56,7 +56,7 @@
             </tr>
             <tr>
                 <td colspan="2"><input type="button" id="cero" value="0" class="boton_cero" onclick="numero(this.value)"></td>
-                <td><input type="button" id="coma" value="," onclick="numero('.')"></td>
+                <td><input type="button" id="coma" value="." onclick="numero('.')"></td>
                 <td rowspan="5"><input type="button" id="mas" value="+" onclick="suma()"></td>
 
             </tr>
