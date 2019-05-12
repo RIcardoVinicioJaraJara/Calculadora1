@@ -109,7 +109,7 @@ function igual() {
 }
 
 
-function soloNumeros1(e) {
+function soloNumeros(e) {
     var key = window.Event ? e.which : e.keyCode
     if (((key >= 48 && key <= 57))) {
         if (document.getElementById("pantalla").value != '0') {
@@ -149,4 +149,8 @@ function soloNumeros1(e) {
         }
         return false;
     }
+}
+
+function nada(){
+    return false;
 }
