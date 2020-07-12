@@ -61,25 +61,10 @@ function multi() {
 
 
 
-function porcetaje() {
+function cuadrado() {
     var numAux1 = document.getElementById("pantalla").value
-    porce = ((numAux * numAux1) / 100);
-    switch (operacion) {
-        case "/":
-            numAux = parseFloat(numAux) / parseFloat(porce)
-            break;
-        case "+":
-            numAux = parseFloat(numAux) + parseFloat(porce)
-            break;
-        case "-":
-            numAux = parseFloat(numAux) - parseFloat(porce)
-            break;
-        case "*":
-            numAux = parseFloat(numAux) * parseFloat(porce)
-            break;
+    document.getElementById("pantalla").value = numAux1 * numAux1;
 
-    }
-    operacion = '%'
 }
 
 function unosobre() {
